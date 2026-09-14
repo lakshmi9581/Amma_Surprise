@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<title>A Message From Papa ❤️</title>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        min-height: 100vh;
+        background: radial-gradient(circle at center, #29213a, #0d0b13 75%);
+        color: white;
+        font-family: Georgia, serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        overflow-x: hidden;
+        padding: 40px 20px;
+    }
+
+    .container {
+        width: 100%;
+        max-width: 850px;
+        position: relative;
+        z-index: 2;
+    }
+
+    .photo-frame {
+        width: min(360px, 85vw);
+        height: min(470px, 110vw);
+        margin: 0 auto 35px;
+        padding: 8px;
+        border-radius: 25px;
+        background: linear-gradient(135deg, #d6b36a, #f5df9b, #b88935);
+        box-shadow:
+            0 0 30px rgba(255, 220, 140, 0.25),
+            0 20px 60px rgba(0, 0, 0, 0.6);
+        animation: appear 2s ease;
+    }
+
+    .photo-frame img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 18px;
+        display: block;
+    }
+
+    h1 {
+        font-size: 38px;
+        color: #f4d98c;
+        margin-bottom: 22px;
+        animation: fadeUp 2s ease;
+    }
+
+    .message {
+        max-width: 700px;
+        margin: auto;
+        font-size: 21px;
+        line-height: 1.9;
+        color: #f3edf5;
+        animation: fadeUp 3s ease;
+    }
+
+    .highlight {
+        margin-top: 25px;
+        font-size: 24px;
+        color: #f4d98c;
+        font-weight: bold;
+    }
+
+    .next-btn {
+        margin-top: 35px;
+        padding: 15px 32px;
+        border: none;
+        border-radius: 35px;
+        background: linear-gradient(135deg, #d6a84f, #b9852e);
+        color: white;
+        font-size: 18px;
+        font-family: Georgia, serif;
+        cursor: pointer;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+        transition: 0.3s;
+    }
+
+    .next-btn:hover {
+        transform: scale(1.06);
+    }
+
+    .heart {
+        position: fixed;
+        font-size: 22px;
+        opacity: 0.5;
+        animation: float 8s linear infinite;
+        pointer-events: none;
+    }
+
+    @keyframes appear {
+        from {
+            opacity: 0;
+            transform: scale(0.9);
+        }
+
+        to {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+
+    @keyframes fadeUp {
+        from {
+            opacity: 0;
+            transform: translateY(25px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes float {
+        from {
+            transform: translateY(110vh);
+            opacity: 0;
+        }
+
+        to {
+            transform: translateY(-120vh);
+            opacity: 0;
+        }
+    }
+</style>
+
+
+</head>
+
+<body>
+
+
+<div class="heart" style="left: 10%;">❤️</div>
+<div class="heart" style="left: 30%; animation-delay: 2s;">✨</div>
+<div class="heart" style="left: 55%; animation-delay: 4s;">❤️</div>
+<div class="heart" style="left: 80%; animation-delay: 1s;">✨</div>
+
+<div class="container">
+
+    <div class="photo-frame">
+        <img src="images/pappa.jpeg" alt="Papa">
+    </div>
+
+    <h1>Oyeeeeeee...</h1>
+
+    <div class="message">
+
+    భైరవి… ❤️
+
+    <br><br>
+
+    ఒక్కసారి నన్ను చూడు…
+
+    <br><br>
+
+    ఇన్ని సంవత్సరాలు గడిచినా,
+    <br>
+    మన జ్ఞాపకాలు మాత్రం నా మనసులో అలాగే ఉన్నాయి.
+
+    <br><br>
+
+    మనిద్దరం కలిసి గడిపిన ఆ రోజులు…
+    <br>
+    మన నవ్వులు…
+    <br>
+    మన చిన్న చిన్న గొడవలు…
+    <br>
+    మన ప్రయాణాలు…
+    <br>
+    మన కుటుంబంతో కలిసి గడిపిన ప్రతి క్షణం…
+    <br>
+    అన్నీ ఇంకా గుర్తున్నాయి. ❤️
+
+    <br><br>
+
+    <strong>భైరవి…</strong>
+
+    <br><br>
+
+    నీతో చెప్పాల్సిన కొన్ని మాటలు ఇంకా ఉన్నాయి…
+    <br>
+    నీ మనసుకు చేరాల్సిన కొన్ని మాటలు ఇంకా ఉన్నాయి.
+
+    <br><br>
+
+    ఈరోజు…
+    <br>
+    ఆ మాటల్లో కొన్నింటిని నీతో చెప్పాలనిపించింది.
+
+    <div class="highlight">
+        నువ్వు సిద్ధంగా ఉంటే…<br>
+        నా మాటలు చదువు. ❤️
+    </div>
+
+</div>
+
+    <button class="next-btn"
+        onclick="window.location.href='secret.html'">
+        Open My Message ❤️
+    </button>
+
+</div>
+
+
+</body>
+
+</html>

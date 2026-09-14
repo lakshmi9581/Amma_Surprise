@@ -1,0 +1,1320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>To My Amma ❤️</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Georgia, "Times New Roman", serif;
+            background: #fff8fb;
+            color: #4d3040;
+            overflow-x: hidden;
+        }
+
+        /* ---------- Floating Hearts ---------- */
+
+        .heart {
+            position: fixed;
+            bottom: -50px;
+            font-size: 22px;
+            opacity: 0.35;
+            animation: floatHeart 10s linear infinite;
+            z-index: 0;
+            pointer-events: none;
+        }
+
+        .heart:nth-child(1) {
+            left: 10%;
+            animation-delay: 1s;
+        }
+
+        .heart:nth-child(2) {
+            left: 30%;
+            animation-delay: 4s;
+        }
+
+        .heart:nth-child(3) {
+            left: 55%;
+            animation-delay: 2s;
+        }
+
+        .heart:nth-child(4) {
+            left: 80%;
+            animation-delay: 6s;
+        }
+
+        @keyframes floatHeart {
+
+            0% {
+                transform: translateY(0) rotate(0deg);
+                opacity: 0;
+            }
+
+            20% {
+                opacity: 0.4;
+            }
+
+            100% {
+                transform: translateY(-110vh) rotate(360deg);
+                opacity: 0;
+            }
+        }
+
+        /* ---------- Hero Section ---------- */
+
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px 20px;
+            background:
+                radial-gradient(circle at top, #ffe0ec, transparent 55%),
+                linear-gradient(135deg, #fff5f9, #f9eafa);
+            position: relative;
+        }
+
+        .small-text {
+            font-size: 18px;
+            letter-spacing: 3px;
+            color: #a65a7a;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 {
+            font-size: clamp(40px, 8vw, 75px);
+            color: #873d61;
+            margin-bottom: 15px;
+        }
+
+        .hero h2 {
+            font-size: clamp(20px, 4vw, 30px);
+            font-weight: normal;
+            color: #745365;
+            max-width: 700px;
+            line-height: 1.5;
+        }
+
+        .hero-heart {
+            font-size: 55px;
+            margin: 25px;
+            animation: heartbeat 1.5s infinite;
+        }
+
+        @keyframes heartbeat {
+
+            0%, 100% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.2);
+            }
+        }
+
+        .scroll-text {
+            position: absolute;
+            bottom: 30px;
+            font-size: 14px;
+            letter-spacing: 2px;
+            color: #a66b84;
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+
+            0%, 100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(10px);
+            }
+        }
+
+        /* ---------- Main Sections ---------- */
+
+        .section {
+            min-height: 100vh;
+            padding: 100px 8%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .content {
+            max-width: 900px;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .section:nth-child(even) {
+            background: #fff0f6;
+        }
+
+        .section:nth-child(odd) {
+            background: #fffafc;
+        }
+
+        .section-title {
+            font-size: clamp(30px, 5vw, 48px);
+            color: #873d61;
+            margin-bottom: 30px;
+        }
+
+        .section-title span {
+            display: block;
+            font-size: 45px;
+            margin-bottom: 15px;
+        }
+
+        .message {
+            font-size: 19px;
+            line-height: 2;
+            color: #5c4651;
+        }
+
+        .highlight {
+            margin: 35px auto;
+            padding: 25px;
+            max-width: 750px;
+            font-size: 25px;
+            line-height: 1.6;
+            color: #873d61;
+            font-weight: bold;
+            font-style: italic;
+        }
+
+        /* ---------- Photo Section ---------- */
+
+        .photo-section {
+            min-height: 100vh;
+            padding: 80px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background: linear-gradient(135deg, #fff1f7, #f5e6ff);
+        }
+
+        .photo-frame {
+            width: min(350px, 80vw);
+            height: min(430px, 100vw);
+            border-radius: 180px 180px 30px 30px;
+            padding: 10px;
+            background: linear-gradient(135deg, #d68baa, #f3c4d8);
+            box-shadow: 0 20px 50px rgba(120, 50, 90, 0.25);
+            margin-bottom: 70px;
+        }
+
+        .photo-frame img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 170px 170px 20px 20px;
+            display: block;
+
+        }
+
+        /* ---------- Final Section ---------- */
+
+        .final {
+            min-height: 100vh;
+            background: linear-gradient(135deg, #f7e5ef, #eee1f8);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .final h2 {
+            font-size: clamp(35px, 7vw, 65px);
+            color: #873d61;
+            margin-bottom: 30px;
+        }
+
+        .final p {
+            font-size: 22px;
+            line-height: 2;
+            max-width: 800px;
+        }
+
+        .love {
+            font-size: 40px;
+            margin: 30px 0;
+        }
+
+        /* ---------- Continue Button ---------- */
+
+        .continue-btn {
+            display: inline-block;
+            margin-top: 40px;
+            padding: 16px 32px;
+            background: #9b4d72;
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-size: 17px;
+            transition: 0.3s;
+            box-shadow: 0 8px 20px rgba(120, 50, 90, 0.2);
+        }
+
+        .continue-btn:hover {
+            transform: translateY(-4px);
+            background: #7e3d5c;
+            box-shadow: 0 12px 25px rgba(120, 50, 90, 0.3);
+        }
+
+        /* ---------- Mobile ---------- */
+
+        @media (max-width: 600px) {
+
+            .section {
+                padding: 80px 25px;
+            }
+
+            .message {
+                font-size: 17px;
+            }
+
+            .highlight {
+                font-size: 21px;
+            }
+
+            .final p {
+                font-size: 18px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Floating Decorations -->
+
+    <div class="heart">❤️</div>
+    <div class="heart">💕</div>
+    <div class="heart">🌸</div>
+    <div class="heart">💗</div>
+
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero">
+
+        <div class="small-text">
+            A LETTER FROM MY HEART
+        </div>
+
+        <h1>To My Amma… ❤️</h1>
+
+        <h2>
+            My First Home, My Best Friend, My Everything
+        </h2>
+
+        <div class="hero-heart">
+            ❤️
+        </div>
+
+        <p class="scroll-text">
+            SCROLL DOWN FOR YOUR SURPRISE ↓
+        </p>
+
+    </section>
+
+
+    <!-- ================= PHOTO ================= -->
+
+    <section class="photo-section">
+
+        <div class="photo-frame">
+
+            <div class="photo-placeholder">
+
+               <img src="images/amma1.jpeg" alt="My Mother India">
+
+            </div>
+
+        </div>
+
+        <h2 class="section-title">
+            Amma… 🥹❤️
+        </h2>
+
+        <p class="message">
+            Where do I even start?
+            <br><br>
+
+            There are so many things I want to tell you…
+            so many feelings in my heart…
+            so many “Thank you”s that I have never properly said…
+            <br><br>
+
+            But whenever I try to put my feelings into words,
+            I realize that <b>words are simply not enough for you.</b>
+        </p>
+
+        <div class="highlight">
+            Because you are not just one part of my life…
+            <br><br>
+            You are the most beautiful part of my life. ❤️
+        </div>
+
+    </section>
+
+
+    <!-- ================= SACRIFICES ================= -->
+
+    <section class="section">
+
+        <div class="content">
+
+            <h2 class="section-title">
+                <span>❤️</span>
+                You Gave Me More Than I Ever Asked For
+            </h2>
+
+            <p class="message">
+
+                I know I don't always understand everything you have done for me.
+
+                <br><br>
+
+                Maybe when I was little, I thought the things you did were
+                just what a mother does.
+
+                <br><br>
+
+                But as I grew older, I slowly started realizing…
+
+                <br><br>
+
+                <b>A mother doesn't just give birth to a child.</b>
+
+                <br>
+
+                <b>A mother gives pieces of herself to make her child's life better.</b>
+
+                <br><br>
+
+                And you did that for me.
+
+                <br><br>
+
+                నా కోసం నువ్వు చేసిన ప్రతి sacrifice వెనుక నీ ప్రేమ ఉంది.
+                <br>
+                నీ ప్రతి worry వెనుక నా గురించి ఆలోచన ఉంది.
+                <br>
+                నీ ప్రతి strict word వెనుక కూడా నా future గురించిన care ఉంది.
+
+                <br><br>
+
+                Amma… ఇప్పుడు ఆ చిన్న చిన్న విషయాల విలువ నాకు అర్థమవుతోంది. ❤️
+
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= STRENGTH ================= -->
+
+    <section class="section">
+
+        <div class="content">
+
+            <h2 class="section-title">
+
+                <span>💪❤️</span>
+
+                You Have Always Been My Strength
+
+            </h2>
+
+            <p class="message">
+
+                Life isn't always easy.
+
+                <br><br>
+
+                Sometimes I get confused.
+                <br>
+                Sometimes I overthink.
+                <br>
+                Sometimes I lose confidence in myself.
+                <br>
+                Sometimes I feel like I am not good enough.
+
+                <br><br>
+
+                But somehow…
+
+                <br><br>
+
+                whenever I talk to you, I feel a little stronger.
+
+                <br><br>
+
+                <b>
+                    నువ్వు నా పక్కన ఉన్నావనే ఒక్క feeling చాలు…
+                    <br>
+                    ఎంత difficult situation అయినా face చేయగలను అనిపిస్తుంది.
+                </b>
+
+            </p>
+
+            <div class="highlight">
+
+                You are my strength when I feel weak.
+                <br>
+                You are my hope when I feel lost.
+                <br>
+                You are my energy when I feel tired.
+                <br>
+                You are my courage when I feel scared.
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= BEST FRIEND ================= -->
+
+    <section class="section">
+
+        <div class="content">
+
+            <h2 class="section-title">
+
+                <span>🫂❤️</span>
+
+                You Are Not Just My Mother…
+                <br>
+                You Are My Best Friend
+
+            </h2>
+
+            <p class="message">
+
+                This is something I really want you to know.
+
+                <br><br>
+
+                నువ్వు నా అమ్మ మాత్రమే అయితే నేను నిన్ను ప్రేమించేవాడిని…
+                <br>
+                కానీ నువ్వు నా best friend కూడా కాబట్టి,
+                నేను నిన్ను ఇంకా ఎక్కువగా cherish చేస్తున్నాను. ❤️
+
+                <br><br>
+
+                I can tell you almost everything.
+
+                <br><br>
+
+                My happiness.
+                <br>
+                My sadness.
+                <br>
+                My silly thoughts.
+                <br>
+                My dreams.
+                <br>
+                My fears.
+                <br>
+                My random stories.
+                <br>
+                My problems.
+
+                <br><br>
+
+                Sometimes we laugh together for absolutely silly reasons.
+
+                <br><br>
+
+                Sometimes we argue.
+                <br>
+                Sometimes you scold me.
+                <br>
+                Sometimes I get angry.
+
+                <br><br>
+
+                But even after all of that…
+
+            </p>
+
+            <div class="highlight">
+
+                at the end of the day,
+                you are still my person. ❤️
+
+                <br><br>
+
+                మన మధ్య ఎన్ని చిన్న చిన్న fights వచ్చినా…
+                <br>
+                చివరికి నేను వచ్చేది నీ దగ్గరకే. 🥹❤️
+
+                <br><br>
+
+                Because you are my safe place.
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= BELIEF ================= -->
+
+    <section class="section">
+
+        <div class="content">
+
+            <h2 class="section-title">
+
+                <span>🌟</span>
+
+                You Believe In Me More Than I Believe In Myself
+
+            </h2>
+
+            <p class="message">
+
+                There have been moments when I doubted myself.
+
+                <br><br>
+
+                Moments when I thought,
+
+                <br>
+
+                <b>“Can I really do this?”</b>
+
+                <br><br>
+
+                And somehow, you always made me feel like…
+
+                <br><br>
+
+                <b>“Yes, you can.”</b>
+
+                <br><br>
+
+                Maybe you don't realize how powerful your belief in me is.
+
+                <br><br>
+
+                When you say,
+
+                <br>
+
+                <b>“నువ్వు చేయగలవు.”</b>
+
+                <br><br>
+
+                Those words give me so much strength.
+
+            </p>
+
+            <div class="highlight">
+
+                One day, I want to make you proud. ❤️
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= GRATITUDE ================= -->
+
+    <section class="section">
+
+        <div class="content">
+
+            <h2 class="section-title">
+
+                <span>🙏❤️</span>
+
+                Amma… I Notice More Than You Think
+
+            </h2>
+
+            <p class="message">
+
+                I notice your sacrifices.
+
+                <br>
+                I notice your worries.
+
+                <br>
+                I notice when you are tired.
+
+                <br>
+                I notice the things you do without telling anyone.
+
+                <br>
+                I notice how you think about me before thinking about yourself.
+
+                <br><br>
+
+                Maybe I don't always say anything…
+
+                <br><br>
+
+                but <b>I notice.</b>
+
+                <br><br>
+
+                And I want you to know that I am grateful.
+
+                <br>
+
+                <b>చాలా చాలా grateful. ❤️</b>
+
+                <br><br>
+
+                For every meal.
+                <br>
+                For every little sacrifice.
+                <br>
+                For every piece of advice.
+                <br>
+                For every hug.
+                <br>
+                For every time you waited for me.
+                <br>
+                For every time you prayed for me.
+                <br>
+                For every time you protected me.
+                <br>
+                For every time you stood beside me.
+
+                <br><br>
+
+                నాకు తెలియకుండానే నా కోసం ఇంత చేస్తూ వచ్చావు…
+
+                <br>
+
+                అందుకే నీకు “Thank you” చెప్పడం కూడా
+                చాలా చిన్న మాటలా అనిపిస్తుంది. 🥹
+
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= GIFT ================= -->
+
+    <section class="section">
+
+        <div class="content">
+
+            <h2 class="section-title">
+
+                <span>🎁❤️</span>
+
+                If I Could Give You One Thing…
+
+            </h2>
+
+            <p class="message">
+
+                If I could give you one thing in this world…
+
+                <br><br>
+
+                I wouldn't give you money.
+
+                <br>
+                I wouldn't give you expensive gifts.
+
+                <br>
+                I wouldn't give you anything that can be bought.
+
+                <br><br>
+
+                I would give you
+                <b>a life where you never have to worry.</b>
+
+                <br><br>
+
+                A life where you can smile without any tension.
+
+                <br><br>
+
+                A life where you can proudly say,
+
+                <br>
+
+                <b>“నా బిడ్డ బాగుంది… సంతోషంగా ఉంది.”</b>
+
+                <br><br>
+
+                That's all I want.
+
+                <br><br>
+
+                Because your happiness means so much to me.
+
+                <br><br>
+
+                నువ్వు నవ్వితే నాకు తెలియకుండానే
+                నా మనసు కూడా happy అయిపోతుంది అమ్మా. ❤️
+
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FUTURE ================= -->
+
+    <section class="section">
+
+        <div class="content">
+
+            <h2 class="section-title">
+
+                <span>🌷</span>
+
+                One Day, I Want To Take Care Of You
+
+            </h2>
+
+            <p class="message">
+
+                You spent so many years taking care of me.
+
+                <br><br>
+
+                One day…
+
+                <br>
+
+                I want to take care of you.
+
+                <br><br>
+
+                I want to give you the happiness you deserve.
+
+                <br>
+                I want to take you places.
+
+                <br>
+                I want to see you smile.
+
+                <br>
+                I want to make you proud.
+
+                <br><br>
+
+                I want to become someone you can proudly look at and say,
+
+                <br><br>
+
+                <b>“ఇది నా బిడ్డ.”</b> 🥹❤️
+
+                <br><br>
+
+                Behind every step I take…
+
+                <br>
+
+                <b>there will always be a little bit of you.</b>
+
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= HOME ================= -->
+
+    <section class="section">
+
+        <div class="content">
+
+            <h2 class="section-title">
+
+                <span>🏠❤️</span>
+
+                You Are My Home
+
+            </h2>
+
+            <div class="highlight">
+
+                Home is not always a place.
+
+                <br><br>
+
+                Sometimes…
+
+                <br><br>
+
+                <b>home is a person.</b>
+
+            </div>
+
+            <p class="message">
+
+                For me, that person is you.
+
+                <br><br>
+
+                Wherever I go…
+
+                <br>
+                wherever life takes me…
+
+                <br>
+                wherever I may be…
+
+                <br><br>
+
+                there will always be a part of me that looks for you.
+
+                <br><br>
+
+                Because your voice feels like home.
+
+                <br>
+                Your hug feels like home.
+
+                <br>
+                Your presence feels like home.
+
+                <br><br>
+
+                <b>
+                    నీ దగ్గర ఉన్నప్పుడు నాకు ప్రపంచం అంతా safe గా అనిపిస్తుంది. ❤️
+                </b>
+
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CHILDHOOD ================= -->
+
+    <section class="section">
+
+        <div class="content">
+
+            <h2 class="section-title">
+
+                <span>🌸</span>
+
+                If I Could Go Back In Time…
+
+            </h2>
+
+            <p class="message">
+
+                If I could go back and relive my childhood…
+
+                <br><br>
+
+                I wouldn't change anything.
+
+                <br><br>
+
+                I would choose the same mother.
+                <br>
+                The same home.
+                <br>
+                The same memories.
+                <br>
+                The same laughs.
+                <br>
+                The same silly fights.
+                <br>
+                The same hugs.
+                <br>
+                The same you.
+
+                <br><br>
+
+                And if life gave me the chance to choose my mother again…
+
+            </p>
+
+            <div class="highlight">
+
+                I would choose you.
+
+                <br><br>
+
+                Not once.
+                <br>
+                Not twice.
+
+                <br><br>
+
+                <b>Every single time. ❤️</b>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= SORRY ================= -->
+
+    <section class="section">
+
+        <div class="content">
+
+            <h2 class="section-title">
+
+                <span>🥹❤️</span>
+
+                Amma… I Am Sorry Too.
+
+            </h2>
+
+            <p class="message">
+
+                There may have been times when I hurt you.
+
+                <br><br>
+
+                Times when I spoke without thinking.
+
+                <br>
+                Times when I didn't understand you.
+
+                <br>
+                Times when I ignored your words.
+
+                <br>
+                Times when I made you worry.
+
+                <br>
+                Times when I took your love for granted.
+
+                <br><br>
+
+                For all those moments…
+
+            </p>
+
+            <div class="highlight">
+
+                I am sorry, Amma. ❤️
+
+            </div>
+
+            <p class="message">
+
+                I may not always express my love properly.
+
+                <br><br>
+
+                I may not always say what is in my heart.
+
+                <br><br>
+
+                But please never think that I don't care.
+
+                <br><br>
+
+                <b>
+                    I care more than I know how to explain.
+                    <br>
+                    And I love you more than I know how to say.
+                </b>
+
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= PROMISE ================= -->
+
+    <section class="section">
+
+        <div class="content">
+
+            <h2 class="section-title">
+
+                <span>🤞❤️</span>
+
+                My Promise To You
+
+            </h2>
+
+            <p class="message">
+
+                I can't promise that life will always be perfect.
+
+                <br><br>
+
+                I can't promise that I will never make mistakes.
+
+                <br><br>
+
+                But I can promise you this…
+
+            </p>
+
+            <div class="highlight">
+
+                I will always try.
+
+            </div>
+
+            <p class="message">
+
+                I will keep moving forward.
+
+                <br>
+                I will keep chasing my dreams.
+
+                <br>
+                I will keep learning.
+
+                <br>
+                I will keep becoming a better person.
+
+                <br><br>
+
+                And whenever I achieve something…
+
+                <br>
+
+                <b>
+                    a part of that achievement will always belong to you.
+                </b>
+
+                <br><br>
+
+                Because behind me stands a woman who believed in me
+                long before I knew how to believe in myself.
+
+            </p>
+
+            <div class="highlight">
+
+                That woman is my Amma. ❤️
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FINAL ================= -->
+
+    <section class="final">
+
+        <h2>
+            And Finally… ❤️
+        </h2>
+
+        <p>
+
+            If someone asks me,
+
+            <br>
+
+            <b>“What is your biggest strength?”</b>
+
+            <br>
+
+            My answer will always be…
+
+            <br><br>
+
+            <b>“My Amma.” ❤️</b>
+
+            <br><br>
+
+            If someone asks me,
+
+            <br>
+
+            <b>“Who is your best friend?”</b>
+
+            <br>
+
+            My answer will be…
+
+            <br><br>
+
+            <b>“My Amma.” 🥹❤️</b>
+
+            <br><br>
+
+            If someone asks me,
+
+            <br>
+
+            <b>“Where is your safe place?”</b>
+
+            <br>
+
+            <b>“Wherever my Amma is.” 🫂❤️</b>
+
+            <br><br>
+
+            If someone asks me,
+
+            <br>
+
+            <b>“What is your biggest blessing?”</b>
+
+            <br>
+
+            <b>“My Amma.” ❤️</b>
+
+        </p>
+
+        <div class="love">
+            ❤️ 🥹 ❤️
+        </div>
+
+        <p>
+
+            <b>
+                నువ్వు నా జీవితంలో ఉండటం నా అదృష్టం అమ్మా.
+            </b>
+
+            <br><br>
+
+            I don't know what the future holds.
+
+            <br>
+            I don't know where life will take me.
+
+            <br>
+            I don't know how much I will change or grow.
+
+            <br><br>
+
+            But one thing will never change…
+
+            <br><br>
+
+            <b>
+                I will always be your child. ❤️
+            </b>
+
+        </p>
+
+        <div class="highlight">
+
+            my first love,
+            <br>
+            my first teacher,
+            <br>
+            my first protector,
+            <br>
+            my first best friend,
+            <br>
+            my strongest support,
+            <br>
+            my biggest blessing,
+            <br>
+            and my forever home. ❤️
+
+        </div>
+
+        <h2>
+            I LOVE YOU, AMMA. ❤️🥹
+        </h2>
+
+        <p>
+
+            ఎన్ని జన్మలు ఉన్నా…
+            ప్రతి జన్మలోనూ నువ్వే నా అమ్మగా రావాలి
+            అని కోరుకుంటాను. ❤️
+
+            <br><br>
+
+            Thank you for giving me your love.
+            <br>
+            Thank you for giving me your strength.
+            <br>
+            Thank you for giving me your time.
+            <br>
+            Thank you for your sacrifices.
+            <br>
+            Thank you for believing in me.
+            <br>
+            Thank you for simply being there.
+
+            <br><br>
+
+            There are millions of mothers in this world…
+
+            <br><br>
+
+            But for me,
+
+            <br>
+
+            <b>there is only one Amma.</b>
+
+            <br><br>
+
+            And she is <b>YOU.</b> ❤️
+
+            <br><br>
+
+            <b>
+                I am so, so lucky to be your daughter. 🥹❤️
+            </b>
+
+        </p>
+
+        <a href="surprise.html" class="continue-btn">
+            There Is Still One More Surprise... ❤️
+        </a>
+
+    </section>
+
+</body>
+
+</html>
+
+

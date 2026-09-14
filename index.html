@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>A Little Surprise for Amma ❤️</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Georgia, serif;
+            background: linear-gradient(135deg, #ffd6e7, #fff1f7, #e8d9ff);
+            overflow: hidden;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 500px;
+            padding: 45px 30px;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.75);
+            border-radius: 25px;
+            box-shadow: 0 15px 40px rgba(100, 60, 100, 0.2);
+            backdrop-filter: blur(10px);
+        }
+
+        .lock {
+            font-size: 55px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            color: #7b315c;
+            font-size: 32px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            color: #6d5362;
+            font-size: 17px;
+            line-height: 1.6;
+            margin-bottom: 25px;
+        }
+
+        input {
+            width: 100%;
+            padding: 14px;
+            border: 2px solid #e5a9c5;
+            border-radius: 12px;
+            outline: none;
+            font-size: 16px;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        input:focus {
+            border-color: #a94d7b;
+        }
+
+        button {
+            width: 100%;
+            padding: 14px;
+            border: none;
+            border-radius: 12px;
+            background: #a94d7b;
+            color: white;
+            font-size: 17px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #87385f;
+            transform: scale(1.03);
+        }
+
+        #message {
+            margin-top: 15px;
+            color: #c03962;
+            font-size: 14px;
+        }
+
+        .heart {
+            position: absolute;
+            font-size: 25px;
+            animation: float 6s linear infinite;
+            opacity: 0.6;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(100vh) rotate(0deg);
+                opacity: 0;
+            }
+
+            20% {
+                opacity: 0.7;
+            }
+
+            100% {
+                transform: translateY(-10vh) rotate(360deg);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="heart" style="left: 10%; animation-delay: 1s;">❤️</div>
+    <div class="heart" style="left: 30%; animation-delay: 3s;">💗</div>
+    <div class="heart" style="left: 55%; animation-delay: 2s;">🌸</div>
+    <div class="heart" style="left: 80%; animation-delay: 4s;">💕</div>
+
+    <div class="container">
+
+        <div class="lock">🔐</div>
+
+        <h1>A Little Surprise for Amma</h1>
+
+        <p>
+            There is something special waiting inside... ❤️
+            <br>
+            Only one person can open it.
+        </p>
+
+        <input
+            type="password"
+            id="password"
+            placeholder="Enter the secret password"
+        >
+
+        <button onclick="checkPassword()">
+            Open My Surprise ❤️
+        </button>
+
+        <div id="message"></div>
+
+    </div>
+
+    <script>
+        function checkPassword() {
+
+            const password = document.getElementById("password").value;
+
+            if (password === "AMMA") {
+
+                window.location.href = "home.html";
+
+            } else {
+
+                document.getElementById("message").innerText =
+                    "Hmm... that's not the secret password 🤭❤️";
+            }
+        }
+    </script>
+
+</body>
+</html>
